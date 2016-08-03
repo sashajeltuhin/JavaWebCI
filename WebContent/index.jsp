@@ -8,7 +8,7 @@
 <link href="bootstrap/css/flot.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/flot.js"></script>
-<title>Java Web App</title>
+<title>Java WebApp on PaaS</title>
 </head>
 <body>
 	<div class="container">
