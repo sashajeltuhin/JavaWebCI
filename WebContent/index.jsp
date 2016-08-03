@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="bootstrap/css/flot.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/flot.js"></script>
 <title>Java WebApp on PaaS</title>
