@@ -23,7 +23,7 @@
           </ul>
         </div>
         <div class="col-sm-9 col-md-10 col-lg-9 main">
-          <h1 class="page-header">Welcome to PaaS. v0.2</h1>
+          <h1 class="page-header">% road congestion</h1>
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
                <h4 class="text-center">Real-time</h4>
