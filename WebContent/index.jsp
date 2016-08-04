@@ -23,7 +23,7 @@
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
               <div id="chart5" class="donut"></div>
-    			<div class="donut-label">24</div>
+    			<div id=pieval class="donut-label"></div>
             </div>
           </div>
         </div>
