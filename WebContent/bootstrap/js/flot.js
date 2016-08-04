@@ -12,13 +12,13 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       var d3 = [[0, 12], [7, 12], [12, 13]];
         
       // line
-      $.plot("#chart2",[d1],{yaxis:{show:false},grid:{borderColor:'#ccc'}});
-      $.plot("#chart3",[d2,d3],{yaxis:{show:false},grid:{borderColor:'#ccc'},series:{color:'#ff4444',lines:{show:true},points:{show:true}}});
-      $.plot("#chart4",[d3],{yaxis:{show:false},grid:{borderColor:'#ccc'},series:{color:'#4444ff'}});
+      //$.plot("#chart2",[d1],{yaxis:{show:false},grid:{borderColor:'#ccc'}});
+      //$.plot("#chart3",[d2,d3],{yaxis:{show:false},grid:{borderColor:'#ccc'},series:{color:'#ff4444',lines:{show:true},points:{show:true}}});
+      //$.plot("#chart4",[d3],{yaxis:{show:false},grid:{borderColor:'#ccc'},series:{color:'#4444ff'}});
       
       // pie
       $.plot("#chart5",[{data:70,color:'#5566ff'},{data:20,color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
-      $.plot("#chart6",[{data:10,color:'#5566ff'},{data:30,color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
+      //$.plot("#chart6",[{data:10,color:'#5566ff'},{data:30,color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
     
       // real-time chart
       // we use an inline data source in the example, usually data would
