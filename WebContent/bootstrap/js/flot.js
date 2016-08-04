@@ -86,10 +86,8 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
 	        var pieData = [70, 30];
 	        if (linePlotData && linePlotData.length > 0){
 	      	  var v = linePlotData[linePlotData.length - 1];
-	      	  $('#pieval').html(v);
-	      	  pieData = [v, 100-v];
+	      	  $('#pieval').html(Math.round(v));
 	        }
-	        console.log("piedata", piedata);
 //	        pieplot.setData([ pieData ]);
 //	        pieplot.draw();
         setTimeout(update, updateInterval);
