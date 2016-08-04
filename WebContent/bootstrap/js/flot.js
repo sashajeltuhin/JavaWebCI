@@ -74,8 +74,10 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       var pieData = [70, 30];
       if (linePlotData && linePlotData.length > 0){
     	  var v = linePlotData[linePlotData.length - 1];
-    	  pieData = [v, 100-v];
+    	  if (v.length && v.length > 1){
+    	  pieData = [v[1], 100-v[1]];
     	  console.log(pieData);
+    	  }
       }
 //      var pieplot = $.plot("#chart5",[{data:pieData[0],color:'#5566ff'},{data:pieData[1],color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
           
@@ -85,7 +87,8 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
 	        plot.draw(); 
 	        if (linePlotData && linePlotData.length > 0){
 	      	  var v = linePlotData[linePlotData.length - 1];
-	      	  var vdata = Math.round(v);
+	      	  if (v.length && v.length > 1)
+	      	  var vdata = Math.round(v[1]);
 	      	  console.log(vdata, v);
 	      	  $('#pieval').html(vdata);
 	        }
