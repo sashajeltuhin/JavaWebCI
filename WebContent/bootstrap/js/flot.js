@@ -82,11 +82,12 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       function update() {
     	  var linePlotData = getRandomData();
 	        plot.setData([ linePlotData ]);
-	        plot.draw();
-	        var pieData = [70, 30];
+	        plot.draw(); 
 	        if (linePlotData && linePlotData.length > 0){
 	      	  var v = linePlotData[linePlotData.length - 1];
-	      	  $('#pieval').html(Math.round(v));
+	      	  var vdata = Math.round(v);
+	      	  console.log(vdata);
+	      	  $('#pieval').html(vdata);
 	        }
 //	        pieplot.setData([ pieData ]);
 //	        pieplot.draw();
