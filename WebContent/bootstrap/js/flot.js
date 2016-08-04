@@ -17,7 +17,7 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       //$.plot("#chart4",[d3],{yaxis:{show:false},grid:{borderColor:'#ccc'},series:{color:'#4444ff'}});
       
       // pie
-      $.plot("#chart5",[{data:70,color:'#5566ff'},{data:20,color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
+      //$.plot("#chart5",[{data:70,color:'#5566ff'},{data:20,color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
       //$.plot("#chart6",[{data:10,color:'#5566ff'},{data:30,color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
     
       // real-time chart
@@ -64,16 +64,31 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       // setup plots
       var options = {
         grid:{borderColor:'#ccc'},
-        series:{shadowSize:0,color:"#33ff33"},
+        series:{shadowSize:0,color:"#45b7cd"},
         yaxis:{min:0,max:100},
         xaxis:{show:true}
       };
        
-      var plot = $.plot($("#chart1"), [ getRandomData() ], options);
+      var linePlotData = getRandomData();
+      var plot = $.plot($("#chart1"), [ linePlotData ], options);
+      var pieData = [70, 30];
+      if (linePlotData && linePlotData.length > 0){
+    	  var v = linePlotData[linePlotData.length - 1];
+    	  pieData = [v, 100-v];
+      }
+      var pieplot = $.plot("#chart5",[{data:pieData[0],color:'#5566ff'},{data:pieData[1],color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
           
       function update() {
-        plot.setData([ getRandomData() ]);
-        plot.draw();
+    	  var linePlotData = getRandomData();
+	        plot.setData([ linePlotData ]);
+	        plot.draw();
+	        var pieData = [70, 30];
+	        if (linePlotData && linePlotData.length > 0){
+	      	  var v = linePlotData[linePlotData.length - 1];
+	      	  pieData = [v, 100-v];
+	        }
+	        pieplot.setData([ pieData ]);
+	        pieplot.draw();
         setTimeout(update, updateInterval);
       }
       
