@@ -25,11 +25,11 @@
         <div class="col-sm-9 col-md-10 col-lg-9 main">
           <h1 class="page-header">Welcome to PaaS. v0.2</h1>
           <div class="row">
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-6 col-sm-6 col-md-6">
                <h4 class="text-center">Real-time</h4>
     			<div id="chart1" class="big-chart"></div>
             </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-6 col-sm-6 col-md-6">
               <div id="chart5" class="donut"></div>
     			<div class="donut-label">24</div>
             </div>
