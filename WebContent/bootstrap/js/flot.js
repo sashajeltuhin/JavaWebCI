@@ -79,7 +79,7 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
     	  console.log(pieData);
     	  }
       }
-//      var pieplot = $.plot("#chart5",[{data:pieData[0],color:'#5566ff'},{data:pieData[1],color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
+      var pieplot = $.plot("#chart5",[{data:pieData[0],color:'#5566ff'},{data:pieData[1],color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
           
       function update() {
     	  var linePlotData = getRandomData();
@@ -89,11 +89,10 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
 	      	  var v = linePlotData[linePlotData.length - 1];
 	      	  if (v.length && v.length > 1)
 	      	  var vdata = Math.round(v[1]);
-	      	  console.log(vdata, v);
 	      	  $('#pieval').html(vdata);
 	        }
-//	        pieplot.setData([ pieData ]);
-//	        pieplot.draw();
+	        pieplot.setData([ v[1], 100-v[1] ]);
+	        pieplot.draw();
         setTimeout(update, updateInterval);
       }
       
