@@ -24,7 +24,7 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       // we use an inline data source in the example, usually data would
       // be fetched from a server
       var data = [], totalPoints = 200;
-      function getRandomData() {
+      function getRecentData() {
         
         if (data.length > 0)
           data = data.slice(1);
@@ -64,12 +64,12 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       // setup plots
       var options = {
         grid:{borderColor:'#ccc'},
-        series:{shadowSize:0,color:"#45b7cd"},
+        series:{shadowSize:0,color:"#ff6384"},
         yaxis:{min:0,max:100},
         xaxis:{show:true}
       };
        
-      var linePlotData = getRandomData();
+      var linePlotData = getRecentData();
       var plot = $.plot($("#chart1"), [ linePlotData ], options);
       var pieData = [70, 30];
       if (linePlotData && linePlotData.length > 0){
@@ -79,10 +79,10 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
     	  console.log(pieData);
     	  }
       }
-      var pieplot = $.plot("#chart5",[{data:pieData[0],color:'#5566ff'},{data:pieData[1],color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
+      var pieplot = $.plot("#chart5",[{data:pieData[0],color:'#ff6384'},{data:pieData[1],color:'#ddd'}],{series:{pie:{show: true,innerRadius: 0.6}}});
           
       function update() {
-    	  var linePlotData = getRandomData();
+    	  var linePlotData = getRecentData();
 	        plot.setData([ linePlotData ]);
 	        plot.draw(); 
 	        if (linePlotData && linePlotData.length > 0){
