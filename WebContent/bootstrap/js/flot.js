@@ -64,7 +64,7 @@ $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js',fun
       // setup plots
       var options = {
         grid:{borderColor:'#ccc'},
-        series:{shadowSize:0,color:"#5566ff"},
+        series:{shadowSize:0,color:"#ff6384"},
         yaxis:{min:0,max:100},
         xaxis:{show:true}
       };
