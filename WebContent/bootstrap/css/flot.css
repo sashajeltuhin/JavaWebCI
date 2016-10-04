@@ -10,9 +10,9 @@
 
 .donut-label {
   position:absolute;
-  left:45%;
+  left:47%;
   font-size:22pt;
-  color:#ddd;
+  color:#000;
   width:100%;
-  top:38%;
+  top:46%;
 }
