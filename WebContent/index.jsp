@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="container">
-      <div class="row">
+      <div class="row" style="background-color:#D3D3D3">
         <div class="col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 main">
           <h1 class="page-header">Traffic data. v1.5.1</h1>
           <div class="row">
