@@ -18,7 +18,7 @@
           <h1 class="page-header">Traffic data. v1.6.5</h1>
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
-               <h4 class="text-center">Road Congestion. Real-time (%)</h4>
+               <h4 class="text-center">Urban Road Congestion. Real-time (%)</h4>
     			<div id="chart1" class="big-chart"></div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
