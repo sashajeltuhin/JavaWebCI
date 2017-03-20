@@ -15,10 +15,10 @@
 	<div class="container">
       <div class="row" style="background-color:#F0FFFF;">
         <div class="col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 main">
-          <h1 class="page-header">Traffic data. v1.6.5</h1>
+          <h1 class="page-header">Local Road Congestion. v1.6.6</h1>
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
-               <h4 class="text-center">Urban Road Congestion. Real-time (%)</h4>
+               <h4 class="text-center">Real-time data feed (%)</h4>
     			<div id="chart1" class="big-chart"></div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
