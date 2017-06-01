@@ -15,7 +15,7 @@
 	<div class="container">
       <div class="row" style="background-color:#F0FFFF;">
         <div class="col-sm-9 col-md-9 col-lg-9 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 main">
-          <h1 class="page-header">I-95 NYC Conditions. v1.7.7</h1>
+          <h1 class="page-header">CA-100 Traffic. v1.7.7</h1>
           <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6">
                <h4 class="text-center">Real-time data feed (%)</h4>
